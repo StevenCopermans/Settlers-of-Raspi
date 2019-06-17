@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Settlers of Raspi</title>
+    <meta name="description" content="This is my HTML5 boilerplate.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#3385FF">
+    <meta name="theme-color" content="#3385FF">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#3385FF">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/screen.css">
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+    <script defer src="./script/settings.js"></script>
+    <script defer src="./script/jscolor.js"></script>
+</head>
+
+<body>
+    <header class="o-row o-row--neutral-xx-dark o-row--sm">
+        <div class="o-container">
+            <div class="c-header">
+                <div class="c-header__title">
+                    <div class="c-header__logo">
+                        <h1 class="c-logo">
+                            <svg class="c-logo__symbol" viewBox="-2 -2 124.76 144.6" xmlns="http://www.w3.org/2000/svg">
+                                <polygon
+                                    points="121.26 105.16 121.26 35.44 60.88 0.58 0.5 35.44 0.5 105.16 60.88 140.02 121.26 105.16" />
+                                <path
+                                    d="M53.15,50s1-12-14-12c-12,0-14.48,8.83-13,14,2,7,28,9,28,19,0,8-9,11-15,11s-15-3-15-11" />
+                                <path d="M97.32,68.33S93.15,58,82.15,58s-20,9-20,22,7,23,19,23,17-11,17-11" />
+                            </svg>
+                        </h1>
+                    </div>
+                    <div class="c-header__titletext">
+                        <h1>
+                            Settlers of Raspi
+                        </h1>
+                    </div>
+                </div>
+                <div class="c-header__nav">
+                    <nav class="c-nav">
+                        <ul class="o-list c-nav__list">
+                            <li class="c-nav__item"><a href="index.html" class="c-nav__link"
+                                    data-text="REALTIME">REALTIME</a>
+                            </li>
+                            <li class="c-nav__item"><a href="#!" class="c-nav__link" data-text="GAMES">GAMES</a></li>
+                            <li class="c-nav__item"><a href="statistics.html" class="c-nav__link"
+                                    data-text="STATISTICS">STATISTICS</a>
+                            </li>
+                            <li class="c-nav__item"><a href="#!" class="c-nav__link active"
+                                    data-text="SETTINGS">SETTINGS</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="o-row">
+        <div class="o-container">
+            <div class="c-main o-layout o-layout--gutter-xl-bp4">
+                <div class="c-historiek o-layout__item u-1-of-1">
+                    <div class="c-card">
+                        <h2>
+                            Board settings
+                        </h2>
+                        <p class="c-info">
+                            Welcome to the board settings!<br />
+                            Here you can select the mode and color for the leds.
+                        </p>
+
+                        <h3>Ledstrip Mode</h3>
+                        <div class="c-radio">
+                            <input type="radio" id="radio-on" name="mode" value="on" />
+                            <label for="radio-on">on</label>
+                            <input type="radio" id="radio-auto" name="mode" value="auto" checked />
+                            <label for="radio-auto">auto</label>
+                            <input type="radio" id="radio-off" name="mode" value="off" />
+                            <label for="radio-off">off</label>
+                        </div>
+
+                        <h3>Ledstrip Color</h3>
+                        <input class="jscolor c-color" value="FFFFFF">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
